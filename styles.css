@@ -11,22 +11,13 @@ html{
     background-color: #F7F8FA;
 }
 
-.left select{
+select{
     padding: 0.3em 0.1em;
     border: 0;
     background-color: #0B2149;
     color: #F7F8FA;
     font-weight: bold;
     font-size: 20px;
-}
-
-.middle-footer-section select{
-    padding: 0.3em 0.1em;
-    border: 0;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 10px;
-    padding-left: 10px;
 }
 
 .header{
@@ -37,6 +28,7 @@ html{
     background-color: #0B2149;
     padding: 30px 10%;
     font-size: 16px;
+    position: sticky;
     top:0;
 }
 
@@ -78,10 +70,6 @@ li{
     align-items: center;
 }
 
-li{
-    padding-bottom: 5px;
-}
-
 .links li{
     display: inline-block;
     padding: 10px;
@@ -100,19 +88,17 @@ li{
 }
 
 
-#searchID{
+.search{
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 0.5s;
-    width: 120px;
+    width: 100px;
     height: 25px;
     background-color: #F7F8FA;
-    border: 0;
-    padding: 10px;
 }
 
 
-/* .search .icon{
+.search .icon{
     position: absolute;
     top: 0;
     left: 0;
@@ -122,24 +108,11 @@ li{
     justify-content: center;
     align-items: center;
     z-index: 1000;
-} */
-
-/* .search .icon::before{
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border: 3px solid #8295BA;
-    border-radius: 50%;
 }
 
-
-.search .icon::after{
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 12px;
-} */
+.search .icon::before{
+    
+}
 
 .below-header{
     background-color: #0B2149;
@@ -206,12 +179,12 @@ li{
     overflow: auto;
     position: -webkit-sticky;
     position: sticky;
-    top: 20%;
+    top: 10%;
  }
 
  .wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
  }
 
  .main{
